@@ -1,0 +1,28 @@
+#app-container {
+  max-width: 800px;
+  padding-left: 0;
+  padding-right: 0;
+
+  /* display styling */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#app-title {
+  background-color: red;
+  border-bottom: 5px solid #000000;
+  text-align: center;
+  width: 100%;
+}
+
+#app-title > .lead {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
