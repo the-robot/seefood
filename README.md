@@ -11,7 +11,7 @@ It can predict not just **hotdog**, also **not hotdog!**.
 I made a web application on top. The app is built with [Yaat framework](https://github.com/yaat-project/yaat) and to run the application, you can follow the instruction below.
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 uvicorn app:app
 ```
 
