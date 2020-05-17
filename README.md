@@ -10,7 +10,7 @@ It can predict not just **hotdog**, also **not hotdog!**.
 
 I made a web application on top. The app is built with [Yaat](https://github.com/yaat-project/yaat) framework and to run the application, you can follow the instruction below.
 
-```sh
+```bash
 pip install requirements_dev.txt
 uvicorn app:app
 ```
