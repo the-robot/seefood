@@ -1,4 +1,5 @@
 #app-container {
+  height: 100%;
   max-width: 800px;
   padding-left: 0;
   padding-right: 0;
@@ -10,7 +11,7 @@
 }
 
 #app-title {
-  background-color: red;
+  background-color: #FF0000;
   border-bottom: 5px solid #000000;
   text-align: center;
   width: 100%;
@@ -18,9 +19,99 @@
 
 #app-title > .lead {
   color: #FFFFFF;
+  font-size: 36px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black;
+
+  margin-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#app-subtitle {
+  border-bottom: 5px solid #000000;
+  text-align: center;
+  width: 100%;
+}
+
+#app-subtitle > .lead {
+  color: #FF0000;
   font-size: 24px;
   font-weight: bold;
-  text-transform: uppercase;
+
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.container #body-content {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/static/background.jpg");
+  background-position: center;
+  width: 100%;
+
+  /* display styling */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#body-content > .lead {
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: bolder;
+  text-shadow:
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black;
+
+  margin-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#body-content > .btn {
+  background-color: #FF0000;
+  border: 4px solid #000000;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+#result-text {
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: bolder;
+  text-shadow:
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black;
 
   margin-bottom: 0;
   padding-top: 8px;
