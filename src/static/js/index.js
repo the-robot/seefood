@@ -14,9 +14,9 @@ $("#image-file").change(function(e){
 
     success: function(data) {
       if (data.hotdog) {
-        $('#is-hotdog').modal('show');
+        $("#is-hotdog").modal("show");
       } else {
-        $('#is-not-hotdog').modal('show');
+        $("#is-not-hotdog").modal("show");
       }
     },
 
@@ -30,6 +30,10 @@ $("#image-file").change(function(e){
       $("#image-file").val('');
     }
   });
+});
+
+$("#about-button").click(function() {
+  $("#about-modal").modal("show")
 });
 
 window.select_image = function() {

@@ -64,11 +64,17 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+}
+
+#body-content > #form {
+  display: flex;
+  flex: 9;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#body-content > .lead {
+#body-content > #form > .lead {
   color: #FFFFFF;
   font-size: 28px;
   font-weight: bolder;
@@ -89,13 +95,37 @@
   padding-bottom: 8px;
 }
 
-#body-content > .btn {
+#body-content > #form > .btn {
   background-color: #FF0000;
   border: 4px solid #000000;
   border-radius: 50%;
   height: 80px;
   width: 80px;
 }
+
+#body-content > #footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#body-content > #footer > .lead {
+  color: #FFFFFF;
+  font-size: 21px;
+  font-weight: bolder;
+  text-decoration: underline;
+
+  margin-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#about-button:hover {
+  cursor: pointer;
+}
+
 
 #result-text {
   color: #FFFFFF;

@@ -28,17 +28,21 @@
       </div>
 
       <div id="body-content">
-        <p class="lead">Let's Get Started</p>
+        <div id="form">
+          <p class="lead">Let's Get Started</p>
+          <input id="image-file" type="file" style="visibility: hidden" /></form>
+          <button type="button" class="btn btn-dark" onclick="select_image()">
+            <svg class="bi bi-card-image" width="40px" height="40px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 00-.5.5v9a.5.5 0 00.5.5h13a.5.5 0 00.5-.5v-9a.5.5 0 00-.5-.5zm-13-1A1.5 1.5 0 000 3.5v9A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 2h-13z" clip-rule="evenodd"/>
+              <path d="M10.648 7.646a.5.5 0 01.577-.093L15.002 9.5V13h-14v-1l2.646-2.354a.5.5 0 01.63-.062l2.66 1.773 3.71-3.71z"/>
+              <path fill-rule="evenodd" d="M4.502 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" clip-rule="evenodd"/>
+            </svg>
+          </button>
+        </div>
 
-        <input id="image-file" type="file" style="visibility: hidden" /></form>
-
-        <button type="button" class="btn btn-dark" onclick="select_image()">
-          <svg class="bi bi-card-image" width="40px" height="40px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 00-.5.5v9a.5.5 0 00.5.5h13a.5.5 0 00.5-.5v-9a.5.5 0 00-.5-.5zm-13-1A1.5 1.5 0 000 3.5v9A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 2h-13z" clip-rule="evenodd"/>
-            <path d="M10.648 7.646a.5.5 0 01.577-.093L15.002 9.5V13h-14v-1l2.646-2.354a.5.5 0 01.63-.062l2.66 1.773 3.71-3.71z"/>
-            <path fill-rule="evenodd" d="M4.502 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" clip-rule="evenodd"/>
-          </svg>
-        </button>
+        <div id="footer">
+          <p id="about-button" class="lead">About</p>
+        </div>
       </div>
 
       <!-- Hotdog Modal -->
@@ -72,6 +76,23 @@
         </div>
       </div>
 
+      <!-- About Modal -->
+      <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body" style="text-align: center;">
+              <p>
+                It's built for fun and the idea is actually from HBO's <a href="https://www.hbo.com/silicon-valley" target="_blank">Silicon Valley</a>.
+              </p>
+
+              <p>
+                Also, this app is open-source. Feel free to check out the code <a href="https://github.com/the-robot/seefood" target="_blank">here</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
     </div>
 
     <!-- Javascript -->
