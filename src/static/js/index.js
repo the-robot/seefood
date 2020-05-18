@@ -12,17 +12,22 @@ $("#image-file").change(function(e){
     contentType: false,
     processData: false,
 
-    success: function(data){
+    success: function(data) {
       if (data.hotdog) {
-        $('#is-hotdog').modal('toggle');
+        $('#is-hotdog').modal('show');
       } else {
-        $('#is-not-hotdog').modal('toggle');
+        $('#is-not-hotdog').modal('show');
       }
     },
 
-    error: function(data){
+    error: function(data) {
         console.log("Error");
         console.log(data);
+    },
+
+    complete: function() {
+      // clear fileinput
+      $("#image-file").val('');
     }
   });
 });
